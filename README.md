@@ -18,8 +18,6 @@ ad_extraction_project/
 │── main.py # Core script for inference
 │── raw_text_batch.csv # Input file with raw ad texts
 │── ad_extraction_results.csv # Output file with extracted info
-│── prompts/
-│ └── ad_extraction_prompt.txt # Prompt template
 │── README.md # Project documentation
 │── requirements.txt # Dependencies
 
