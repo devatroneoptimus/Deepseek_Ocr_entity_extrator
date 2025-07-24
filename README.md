@@ -14,7 +14,7 @@ This project extracts **Brand**, **Product**, and **Category** from raw OCR adve
 ##  Folder Structure
 ```
 ad_extraction_project/
-│── main.py # Core script for inference
+│── app.py # Core script for inference
 │── raw_text_batch.csv # Input file with raw ad texts
 │── ad_extraction_results.csv # Output file with extracted info
 │── README.md # Project documentation
