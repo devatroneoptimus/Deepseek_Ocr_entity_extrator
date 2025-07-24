@@ -7,7 +7,7 @@ This project extracts **Brand**, **Product**, and **Category** from raw OCR adve
 ##  Features
 ✔ Handles **noisy OCR ad text** effectively  
 ✔ Extracts **Brand**, **Product**, and **Category** with custom rules  
-✔ Processes ** data from CSV** and outputs structured results    
+✔ Processes **data from CSV** and outputs structured results    
 
 ---
 
