@@ -1,14 +1,13 @@
 # 🧠 Ad Information Extraction using DeepSeek-R1-Distill-Qwen-1.5B
 
-This project extracts **Brand**, **Product**, and **Category** from raw OCR advertisement text using **LLM-based reasoning**. The pipeline uses the **DeepSeek-R1-Distill-Qwen-1.5B** model from Hugging Face for advanced reasoning and accurate text understanding.
+This project extracts **Brand**, **Product**, and **Category** from raw OCR advertisement text using **LLM-based reasoning**. The pipeline uses the **DeepSeek-R1-Distill-Qwen-1.5B** model from Hugging Face for advanced reasoning and text understanding.
 
 ---
 
 ##  Features
 ✔ Handles **noisy OCR ad text** effectively  
 ✔ Extracts **Brand**, **Product**, and **Category** with custom rules  
-✔ Processes **batch data from CSV** and outputs structured results  
-✔ Ready for **deployment and scaling**  
+✔ Processes **batch data from CSV** and outputs structured results    
 
 ---
 
@@ -34,7 +33,7 @@ ad_extraction_project/
 
 ---
 
-## 🚀 Installation
+##  Installation
 1. **Clone the repository**
    ```bash
    https://github.com/devatroneoptimus/Deepseek_Ocr_entity_extrator.git
