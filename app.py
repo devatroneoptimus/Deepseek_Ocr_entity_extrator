@@ -86,24 +86,11 @@ Ad Text:
 
 def predict_ad(text):
     prompt = build_prompt(text)
-    output = llm(prompt, do_sample=False, max_new_tokens=1000)[0]["generated_text"]
-    response = output[len(prompt):].strip()
-    return response
+    output = llm(prompt, do_sample=False, max_new_tokens=500)[0]["generated_text"]
+    return output[len(prompt):].strip()
 
-#  File path for input CSV
-dataset_path = "raw_text_batch.csv"
-
-#  Read CSV
-df = pd.read_csv(dataset_path)
-
-#  Assume your CSV has a column named "Raw Text" (change if needed)
-text_column = "Raw Text"
-
-#  Apply prediction to each row
-df["Extracted_Info"] = df[text_column].apply(lambda x: predict_ad(str(x)))
-
-#  Save output CSV
-output_path = "ad_extraction_results.csv"
-df.to_csv(output_path, index=False)
-
-print(f" Processing completed! Output saved to: {output_path}")
+def process_csv(input_csv, output_csv):
+    df = pd.read_csv(input_csv)
+    df["Extracted_Info"] = df["Raw Text"].apply(lambda x: predict_ad(str(x)))
+    df.to_csv(output_csv, index=False)
+    print(f"✅ Processing completed! Output saved to: {output_csv}")
