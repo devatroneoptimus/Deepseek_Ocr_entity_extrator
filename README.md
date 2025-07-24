@@ -7,18 +7,21 @@ This project extracts **Brand**, **Product**, and **Category** from raw OCR adve
 ##  Features
 ✔ Handles **noisy OCR ad text** effectively  
 ✔ Extracts **Brand**, **Product**, and **Category** with custom rules  
-✔ Processes **batch data from CSV** and outputs structured results    
+✔ Processes ** data from CSV** and outputs structured results    
 
 ---
 
 ##  Folder Structure
 ```
-ad_extraction_project/
-│── app.py # Core script for inference
-│── raw_text_batch.csv # Input file with raw ad texts
-│── ad_extraction_results.csv # Output file with extracted info
-│── README.md # Project documentation
-│── requirements.txt # Dependencies
+Deepseek_ocr_entity_extractor_project/
+│
+├── main.py                  # Main entry point
+├── app.py                   # Model inference logic
+├── converter_json_csv.py    # JSON → CSV converter
+├── raw_text_batch.csv       # Intermediate file
+├── ad_extraction_results.csv # Final output
+├── requirements.txt
+
 
 ```
 ---
