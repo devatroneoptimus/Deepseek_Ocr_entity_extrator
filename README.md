@@ -37,8 +37,8 @@ ad_extraction_project/
 ## 🚀 Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/devatroneoptimus/ad-extraction-llm.git
-   cd ad-extraction-llm
+   https://github.com/devatroneoptimus/Deepseek_Ocr_entity_extrator.git
+
 ### 2. ✅ Set up Python and Virtual Environment
 
 
