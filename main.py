@@ -4,7 +4,7 @@ from app import process_csv
 
 if __name__ == "__main__":
     # File paths
-    input_json = "input/New Text Document.json"   # Example: place your JSON in "input" folder
+    input_json = r"C:\Deepseek_Ocr_entity_extrator\input.json"   # Example: place your JSON in "input" folder
     intermediate_csv = "temp/raw_text_batch.csv"  # Temporary CSV
     output_csv = "results/ad_extraction_results.csv"  # Final CSV output
 
