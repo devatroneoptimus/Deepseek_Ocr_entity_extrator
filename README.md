@@ -68,6 +68,12 @@ pip install -r requirements.txt
      "Urbanrise World Of Joy 2 & 3 BHK Flats. Sponsored..."
      ```
 ---
+### 5. ✅ put json_data file path Inside
+
+```bash
+ main.py
+```
+---
 ### 5. ✅ Run the Application
 
 ```bash
