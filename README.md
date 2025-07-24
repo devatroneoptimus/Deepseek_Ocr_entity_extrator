@@ -55,9 +55,18 @@ env\Scripts\activate        # On Windows
 ```bash
 pip install -r requirements.txt
 ```
+### 4. Usage
 
+1. **Prepare your input CSV**
+   - Ensure your CSV file contains a column named `Raw Text` with OCR-extracted ad text.
+   - Example:
+     ```
+     Raw Text
+     "Emma Sleep India - Europe's best-selling mattress. Sponsored..."
+     "Urbanrise World Of Joy 2 & 3 BHK Flats. Sponsored..."
+     ```
 ---
-### 4. ✅ Run the Application
+### 5. ✅ Run the Application
 
 ```bash
 python app.py
