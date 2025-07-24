@@ -86,7 +86,7 @@ Ad Text:
 
 def predict_ad(text):
     prompt = build_prompt(text)
-    output = llm(prompt, do_sample=False, max_new_tokens=500)[0]["generated_text"]
+    output = llm(prompt, do_sample=False, max_new_tokens=1000)[0]["generated_text"]
     return output[len(prompt):].strip()
 
 def process_csv(input_csv, output_csv):
