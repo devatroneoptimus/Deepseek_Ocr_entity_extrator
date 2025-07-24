@@ -1,17 +1,21 @@
-# main.py
+import os
 from converter_json_csv import convert_json_to_csv
 from app import process_csv
 
 if __name__ == "__main__":
-    # Input JSON path
-    input_json = "New Text Document.json"  # Change path as needed
-    intermediate_csv = "raw_text_batch.csv"
-    output_csv = "ad_extraction_results.csv"
+    # File paths
+    input_json = "input/New Text Document.json"   # Example: place your JSON in "input" folder
+    intermediate_csv = "temp/raw_text_batch.csv"  # Temporary CSV
+    output_csv = "results/ad_extraction_results.csv"  # Final CSV output
 
-    print("🔄 Step 1: Converting JSON to CSV...")
+    #  Create necessary directories
+    for path in [intermediate_csv, output_csv]:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    print("Step 1: Converting JSON to CSV...")
     convert_json_to_csv(input_json, intermediate_csv)
 
-    print("🔄 Step 2: Running LLM extraction on CSV...")
+    print("Step 2: Running LLM extraction on CSV...")
     process_csv(intermediate_csv, output_csv)
 
-    print("✅ All steps completed successfully!")
+    print(f"Completed successfully! Output saved to: {output_csv}")
