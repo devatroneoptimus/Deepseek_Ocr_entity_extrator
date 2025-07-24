@@ -12,4 +12,4 @@ def convert_json_to_csv(input_file, output_file):
     df = pd.DataFrame(raw_texts, columns=["Raw Text"])
     
     df.to_csv(output_file, index=False)
-    print(f"✅ CSV created successfully: {output_file}")
+    print(f" CSV created : {output_file}")
