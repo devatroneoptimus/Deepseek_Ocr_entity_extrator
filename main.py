@@ -18,4 +18,4 @@ if __name__ == "__main__":
     print("Step 2: Running LLM extraction on CSV...")
     process_csv(intermediate_csv, output_csv)
 
-    print(f"Completed successfully! Output saved to: {output_csv}")
+    print(f" Output saved to: {output_csv}")
